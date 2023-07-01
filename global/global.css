@@ -1,0 +1,96 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  *:focus {
+    outline: 1px solid #FF1D61;
+  }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  .top_navbar {
+    width: 22.5rem;
+    height: 3.125rem;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1875rem;
+    width: 22.5rem;
+    padding-bottom: 0px;
+  }
+  
+  main .main_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3125rem;
+  }
+  
+  main .main_header h1 {
+    color: #000;
+    text-align: center;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  .main_header .container_add_new {
+    display: flex;
+    gap: 0.3125rem;
+  }
+  
+  svg {
+    width: 0.4375rem;
+    height: 0.4375rem;
+    align-self: center;
+  }
+  
+  .main_header .container_add_new h2 {
+    color: #000;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  main section .contacts_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3125rem;
+  }
+  
+  section .contacts_header .h1_contacts_header {
+    color: #000;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .big_rectangle {
+    display: flex;
+    flex-direction: column;
+    width: 18.75rem;
+    height: 33rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
