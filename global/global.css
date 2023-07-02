@@ -88,9 +88,167 @@
     display: flex;
     flex-direction: column;
     width: 18.75rem;
-    height: 33rem;
+    height: 30rem;
     flex-shrink: 0;
     border-radius: 0.9375rem;
     background: #FFF;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   }
+
+  main footer {
+    display: flex;
+    width: 22.5rem;
+    height: fit-content;
+    padding: 1.75rem 1rem 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    border-radius: 2.5rem 2.5rem 0rem 0rem;
+    background: #FFF;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  main footer .company_info {
+    display: flex;
+    width: 15.625rem;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    flex-shrink: 0;
+  }
+  
+  main footer svg {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    flex-shrink: 0; 
+  }
+  
+  main footer .company_info #company_info_title {
+    color: #000;
+    text-align: center;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  main footer .company_info .header_subtitle {
+    color: #000;
+    text-align: center;
+    font-size: 0.800rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  main footer .navlinks {
+    display: flex;
+    width: 15.625rem;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3125rem;
+    flex-shrink: 0;
+  }
+  
+  main footer .navlinks h1 {
+    color: #000;
+    text-align: center;
+    font-size: 1.375rem;
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  footer .navlinks a {
+    color: #000;
+    text-align: center;
+    font-size: 0.800rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    transition: 0.125s;
+  }
+  
+  footer .navlinks a:hover {
+    font-weight: 600;
+  }
+  
+  footer .contact_info {
+    display: flex;
+    width: 15.625rem;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3125rem;
+    flex-shrink: 0;
+  }
+  
+  main footer .contact_info h1 {
+    color: #000;
+    text-align: center;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  footer .contact_info p {
+    color: #000;
+    text-align: center;
+    font-size: 0.800rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+  }
+
+  footer .navlinks a {
+  color: #000;
+  text-align: center;
+  font-size: 0.800rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  transition: 0.125s;
+  text-decoration: none;
+}
+
+footer .navlinks a:hover {
+  font-weight: 600;
+}
+
+footer .contact_info {
+  display: flex;
+  width: 15.625rem;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  flex-shrink: 0;
+}
+
+main footer .contact_info h1 {
+  color: #000;
+  text-align: center;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+footer .contact_info p {
+  color: #000;
+  text-align: center;
+  font-size: 0.800rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
