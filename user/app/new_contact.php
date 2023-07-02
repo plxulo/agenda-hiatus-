@@ -57,7 +57,7 @@
             <p>(47) 99735-5556</p>
           </header>
         </section>
-        <form action="" method="POST">
+        <form action="../../php/process_contact.php" method="POST">
           <div class="input_box">
             <div class="container_label">
               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@
             </svg>
               <label for="name">Email:</label>
             </div>
-            <input type="text" class="username_input" id="username_input" name="username_input" placeholder="Email">
+            <input type="text" class="username_input" id="username_input" name="email_input" placeholder="Email">
           </div>
           <div class="input_box">
             <div class="container_label">
@@ -85,7 +85,7 @@
             </svg>
               <label for="name">Telefone:</label>
             </div>
-            <input type="text" class="username_input" id="username_input" name="username_input" placeholder="Telefone">
+            <input type="text" class="username_input" id="username_input" name="phone_input" placeholder="Telefone">
           </div>
           <button type="submit" class="submit_button">Adicionar</button>
           <a href="main.php"><button onclick="cancelar();" class="cancel_button">Cancelar</button></a>
