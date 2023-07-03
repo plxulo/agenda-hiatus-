@@ -1,6 +1,6 @@
 <?php
   namespace agenda;
-  include_once("db_connection.php");
+  // include_once("db_connection.php");
 
   class contato
   {
@@ -20,47 +20,37 @@
     
     public function get_message()
     {
-      echo "O nome é: {$this->contact_name} e seu número é: {$this->contact_phone}";
+      echo "O nome é: {$this->contact_name} e seu email é: {$this->contact_email} e seu telefone é {$this->contact_phone}.";
     }
-
   }
 
   // OBJECT CONTATO (usando __construct)
-  $contato = new contato('João', 'XXXXXXXXXXXXXX', '999999999');
+  $name = $_POST["frm_name"];
+  $name = filter_var($name, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+  $email = $_POST["frm_email"];
+  $email = filter_var($email, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+  $phone = $_POST["frm_phone"];
+  $phone = filter_var($phone, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+  $contato = new contato($name, $email, $phone);
 
   // OUTPUT:
   $contato->get_message();
 ?>
 
-<?php
-namespace Html;
-class Table {
-  public $title = "";
-  public $numRows = 0;
-  
-  // $titulo e $linhas são parametros da função __construct
-  public function __construct($titulo, $linhas) {
-    // $this se refere ao próprio objeto, no caso o objeto table criado fora da classe.
-  	$this->title = $titulo;
-    $this->numRows = $linhas;
-  }
-  
-  public function message() {
-    echo "<p>Table '{$this->title}' has {$this->numRows} rows.</p>";
-  }
-}
-// Objeto table, é o que é referido pelo $this na função __construct
-// Parâmetros = new classe(titulo, linhas):
-$table = new Table("My table", 5);
-?>
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retorno OOP</title>
+</head>
+
 <body>
-
-<?php
-$table->message();
-?>
-
+  <a href="teste.php"><button>Voltar</button></a>
 </body>
 </html>
