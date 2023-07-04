@@ -1,7 +1,5 @@
 <?php
   namespace agenda;
-  // include_once("db_connection.php");
-
   class contato
   {
     // Propriedades:
@@ -18,9 +16,10 @@
       $this->contact_phone = $phone;
     }
     
+    // GETTER : sem param
     public function get_message()
     {
-      echo "O nome é: {$this->contact_name} e seu email é: {$this->contact_email} e seu telefone é {$this->contact_phone}.";
+      return "Nome: {$this->contact_name}, email: {$this->contact_email}, telefone: {$this->contact_phone}"; 
     }
   }
 
@@ -35,11 +34,12 @@
   $phone = filter_var($phone, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
   $contato = new contato($name, $email, $phone);
-
-  // OUTPUT:
-  $contato->get_message();
+  
+  // RETURN:
+  $return = $contato->get_message();
 ?>
 
+<!-- === OUTPUT HTML : === -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -47,10 +47,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../global/global.css">
+
   <title>Retorno OOP</title>
 </head>
 
 <body>
-  <a href="teste.php"><button>Voltar</button></a>
+  <p><?php echo $return ?></p>
+  <a href="../teste.php"><button>Voltar</button></a>
 </body>
 </html>
